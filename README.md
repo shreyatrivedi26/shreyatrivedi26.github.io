@@ -1,4 +1,3 @@
-# AOS C204: Introduction to Machine Learning for Physical Sciences 
 # Final Project
 
 I applied machine learning techniques to investigate relationships between Antarctic Sea-ice Thickness and various Southern Hemispheric Atmospheric Indices. 
