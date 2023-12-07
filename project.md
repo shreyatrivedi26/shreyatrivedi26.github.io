@@ -1,4 +1,4 @@
-## My Project
+## AOS204: MAchine Learning-- Final Project
 
 I applied machine learning techniques to investigate relationships between Antarctic Sea-ice Thickness and various Southern Hemispheric Atmospheric Indices. 
 
