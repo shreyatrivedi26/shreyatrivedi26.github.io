@@ -100,19 +100,55 @@ predictions = rf_pipeline.predict(test_features)
 Thereafter, I calculated feature importance which gave an estimate of how important a particular feature is in determining the target variable i.e. SIT. These feature importance values are then plotted as bar plots for every region and two distinct seasons:
 
 ```python
+# Access the RandomForestRegressor model inside the pipeline
+rf_model = rf_pipeline.named_steps['rf']
 
+# Get numerical feature importances
+importances = list(rf_model.feature_importances_)
+
+# List of tuples with variable and importance
+feature_importances = [(feature, round(importance, 3)) for feature, importance in zip(feature_list, importances)]
+
+# Sort the feature importances by most important first
+feature_importances = sorted(feature_importances, key = lambda x: x[1], reverse = True)
+
+# Print out the feature and importances 
+[print('Variable: {:20} Importance: {}'.format(*pair)) for pair in feature_importances];
 ```
 
 This study also employs the use of SHAP (SHapley Additive exPlanations) plots. SHAP values are a way to explain the output of any machine learning model. It uses a game theoretic approach that measures each feature’s contribution to the final outcome. In machine learning, each feature is assigned an importance value representing its contribution to the model’s output (as seen above). SHAP values show how each feature affects each final prediction, the significance of each feature compared to others, and the model’s reliance on the interaction between features. Similarly, SHAP plots were also produced for every region and the seasons:
 
 ```python
+# Create an explainer object
+explainer = shap.Explainer(rf_model)
 
+# Calculate SHAP values for the test set
+shap_values = explainer.shap_values(test_features)
+
+# Plot individual SHAP value plots
+shap.summary_plot(shap_values, test_features, feature_names=feature_list,show=False)    
+ax.set_title("SHAP Value",fontsize=12,fontweight="bold")
+ax.set_xlabel("Impact on model output", fontsize=10,  fontweight='bold')
+
+plt.show()
 ```
 
 In the end, I have compared the regional Random Forest Regression Models for every season by using the Regression Error Characteristics (REC) Curves to assess how the models have performed in every region:
 
 ```python
+# REC curve
+def rec(m, n, tol):
+    if not type(m) == 'numpy.ndarray':
+        m = np.array(m) #change m to a np array
+    if not type(n) == 'numpy.ndarray':
+        n = np.array(n) #change n to a np array
 
+    l = m.size
+    percent = 0
+    for i in range(l):
+        if np.abs(10**m[i]-10**n[i])<=tol:
+            percent+=1
+    return 100*(percent/l)
 ```
 
 
