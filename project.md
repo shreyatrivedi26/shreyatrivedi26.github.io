@@ -56,8 +56,6 @@ Prior studies established these selected indices as significant drivers of Antar
 The preference is for features that are as “mutually exclusive” as possible. Fig.2 illustrates that most of the chosen predictors exhibit minimal correlations among themselves. An exception is observed for the SAM and ASL, with the highest correlation value recorded at -0.56. However, this correlation, although notable, is not significantly high to compromise its relevance as the crucial predictors.
 
 
-
-
 ## Modeling
 
 Following python packages were used in constructing a Machine Learning Model:
