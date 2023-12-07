@@ -71,6 +71,7 @@ To make this simple, you can write the report using a word processor or Latex, t
 
 A link to your code must be submitted on BruinLearn, and the course instructor must be able to download and run your code using the dataset. The code could be in a Google Colab notebook (make sure to *share* the notebook so access is set to **Anyone with the link**), or you could upload the code into a separate GitHub repository, or you could upload the code into the `assets` directory of your website and link to it. 
 
+### Link to the Final Project
 
 [C204_ML-Final_Project_ST.pdf](https://github.com/shreyatrivedi26/shreyatrivedi26.github.io/files/13593295/C204_ML-Final_Project_ST.pdf)
 
