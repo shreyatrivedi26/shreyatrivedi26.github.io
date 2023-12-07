@@ -115,13 +115,21 @@ In conclusion, the Random Forest Regression Model indicates that certain regions
 
 ## References
 [1] ChatGPT
+
 [2] Handcock, M. S., & Raphael, M. N. (2020). Modeling the annual cycle of daily Antarctic sea ice extent. The Cryosphere, 14(7), 2159–2172. https://doi.org/10.5194/tc-14-2159-2020
+
 [3] Hobbs, W., Massom, R., Stammerjohn, S., Reid, P., Williams, G., & Meier, W. (2016). A review of recent changes in Southern Ocean sea ice, their drivers and forcings. Global and Planetary Change, 143. https://doi.org/10.1016/j.gloplacha.2016.06.008
+
 [4] Hosking, J. S., Orr, A., Marshall, G. J., Turner, J., & Phillips, T. (2013). The Influence of the Amundsen–Bellingshausen Seas Low on the Climate of West Antarctica and Its Representation in Coupled Climate Model Simulations. Journal of Climate, 26(17), 6633–6648. https://doi.org/10.1175/JCLI-D-12-00813.1
+
 [5] Kwok, R., & Comiso, J. C. (2002). Southern Ocean Climate and Sea Ice Anomalies Associated with the Southern Oscillation. Journal of Climate, 15(5), 487–501. https://doi.org/10.1175/1520-0442(2002)015<0487:SOCASI>2.0.CO;2
+
 [6] Raphael, M. N. (2004). A zonal wave 3 index for the Southern Hemisphere: ZONAL WAVE 3 INDEX. Geophysical Research Letters, 31(23). https://doi.org/10.1029/2004GL020365
+
 [7] Raphael, M. N., & Hobbs, W. (2014). The influence of the large-scale atmospheric circulation on Antarctic sea ice during ice advance and retreat seasons. Geophysical Research Letters, 41(14), 5037–5045. https://doi.org/10.1002/2014GL060365
+
 [8] Thompson, D. W. J., & Wallace, J. M. (2000). Annular Modes in the Extratropical Circulation. Part I: Month-to-Month Variability. Journal of Climate, 13(5), 1000–1016. https://doi.org/10.1175/1520-0442(2000)013<1000:AMITEC>2.0.CO;2
+
 
 
 [back](./)
