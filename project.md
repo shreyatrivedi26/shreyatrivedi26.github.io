@@ -32,9 +32,7 @@ This study focuses on Southern Hemisphere atmospheric circulation patterns and t
 
 My project will utilize gridded NetCDF datasets which are 3-D datasets (longitude, latitude, time) for various sea-ice and atmospheric variables. These will be derived from the historical experiment of the CMIP6’s coupled climate model (i.e. CESM2) for the time-period of 1979-2014. The dataset can be accessed and downloaded from the ESGF website via following: https://esgf-node.llnl.gov/search/cmip6/. Various climatic indices have been calculated using different atmospheric variables obtained from the historical experiment of CESM2 couple climate model. The details can be found in Table 1. 
 
-![](assets/IMG/datapenguin.png){: width="500" }
-
-*Figure 1: Here is a caption for my diagram. This one shows a pengiun [1].*
+![](assets/IMG/Table1.png){: width="500" }
 
 ## Methodlogy
 
@@ -151,7 +149,8 @@ def rec(m, n, tol):
 
 ## Results
 
-Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.
+*Figure 1: Here is a caption for my diagram. This one shows a pengiun [1].*
+*Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.*
 
 Figure 4:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Advance Season.
 
