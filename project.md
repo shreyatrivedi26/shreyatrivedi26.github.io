@@ -60,6 +60,7 @@ The preference is for features that are as “mutually exclusive” as possible.
 
 Following python packages were used in constructing a Machine Learning Model:
 
+
 ```python
 #For Random Forest Regression:
 
@@ -77,6 +78,7 @@ from sklearn.preprocessing import StandardScaler
 ```
 
 I constructed a pipeline with feature scaling and Random Forest Regressor as follows: 
+
 
 ```python
 # Split the data into train and test sets for SIT:
@@ -96,6 +98,7 @@ predictions = rf_pipeline.predict(test_features)
 
 Thereafter, I calculated feature importance which gave an estimate of how important a particular feature is in determining the target variable i.e. SIT. These feature importance values are then plotted as bar plots for every region and two distinct seasons:
 
+
 ```python
 # Access the RandomForestRegressor model inside the pipeline
 rf_model = rf_pipeline.named_steps['rf']
@@ -114,6 +117,7 @@ feature_importances = sorted(feature_importances, key = lambda x: x[1], reverse 
 ```
 
 This study also employs the use of SHAP (SHapley Additive exPlanations) plots. SHAP values are a way to explain the output of any machine learning model. It uses a game theoretic approach that measures each feature’s contribution to the final outcome. In machine learning, each feature is assigned an importance value representing its contribution to the model’s output (as seen above). SHAP values show how each feature affects each final prediction, the significance of each feature compared to others, and the model’s reliance on the interaction between features. Similarly, SHAP plots were also produced for every region and the seasons:
+
 
 ```python
 # Create an explainer object
@@ -170,12 +174,12 @@ def rec(m, n, tol):
 
 ## Discussion and Conclusions
 
-## I.	Feature Importance Analysis highlighted and reaffirmed the regional heterogeneity around the Antarctic in terms of distinct atmospheric circulation-based Indices dictating the regional SIT distributions.
+**I.	Feature Importance Analysis highlighted and reaffirmed the regional heterogeneity around the Antarctic in terms of distinct atmospheric circulation-based Indices dictating the regional SIT distributions.**
 
 Figure 3 highlights the distinct nature of sea-ice distribution in each Antarctic region, primarily attributed to unique influencing factors that affect the distribution disparately. Each region exhibits a diverse set of dominant climatic indices that mold SIT during specific seasons. For instance, in the Advance season, Zonal Wave-3 (ZW3) emerges as a prominent climatic variability mode in most regions. However, during the Retreat season, the Amundsen Sea Low (ASL) consistently takes precedence as the foremost climate mode across all regions, exhibiting a substantial magnitude difference whereas, ZW3 remains a dormant mode of climatic variability. This substantiates the hypothesis that despite shared atmospheric, oceanic characteristics, and geographical proximity, Antarctic regions experience distinct impacts from specific climate indices, contributing to the observed regional heterogeneity in Southern Ocean sea-ice. Consequently, this analysis aids in discerning the predominant climate mode in each region.
 SHAP Plots (Fig.4 and 5) build upon the results from the Fig.3 by assessing the direction and magnitude of the relationships between the climatic indices and SIT across regions and seasons. For the retreat season, Fig.3 illustrates the predominant influence of the ASL on SIT across all Antarctic regions. This information is further supported by SHAP plots in Fig.4, depicting the magnitude and direction of the ASL’s influence. The plots reveal a consistent strong positive relationship between ASL and SIT across all regions. Specifically, higher magnitudes of ASL (represented by red dots) correspond to a positive impact on SIT (reflected via the positive x-axis). In essence, a stronger ASL tends to increase SIT in each region, while a weaker ASL is associated with a decrease in SIT.
 
-## II.	The constructed Regional Random Forest Regression Model performs better for the Ross-Amundsen Seas during the Advance season and the East Antarctic Region during the Retreat season. Overall, the seasonal performance of regional models is better during the Advance Season compared to the Retreat Season. 
+**II.	The constructed Regional Random Forest Regression Model performs better for the Ross-Amundsen Seas during the Advance season and the East Antarctic Region during the Retreat season. Overall, the seasonal performance of regional models is better during the Advance Season compared to the Retreat Season.**
 
 My findings demonstrate the effectiveness of the Random Forest Regression Model in establishing relationships between diverse features (in my case, Climate Indices in Southern Hemisphere), whether inclusive or exclusive, and the target variable (i.e. SIT). The model proves to be a valuable tool for identifying key drivers of sea ice changes through its feature importance function and facilitates the assessment of the nature of relationships using SHAP Plots. However, it is noteworthy that the model’s performance exhibits significant variations depending on the season and geographical regions. 
 
