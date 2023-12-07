@@ -2,15 +2,13 @@
 
 <h1 align="center">Final Project</h1>
 
-I applied machine learning techniques to investigate relationships between Antarctic Sea-ice Thickness and various Southern Hemispheric Atmospheric Indices. 
-
-Below is my report:
+I applied a supervised machine learning algorithm to investigate relationships between Antarctic Sea-ice Thickness and various Southern Hemispheric Atmospheric Indices. 
 
 ***
 
 <h2 align="center">Title</h2>
 
-<p align="center" style="font-size:20px;">
+<p align="center" style="font-size:20;">
   Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
 </p>
 
