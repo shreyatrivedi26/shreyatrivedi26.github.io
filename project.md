@@ -64,23 +64,56 @@ The preference is for features that are as “mutually exclusive” as possible.
 Following python packages were used in constructing a Machine Learning Model:
 
 ```python
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.datasets import make_classification
-X, y = make_classification(n_features=4, random_state=0)
-clf = ExtraTreesClassifier(n_estimators=100, random_state=0)
-clf.fit(X, y)
-clf.predict([[0, 0, 0, 0]])
+#For Random Forest Regression:
+
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.tree import export_graphviz
+import shap
+from sklearn.pipeline import Pipeline
+
+from sklearn.pipeline import make_pipeline
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
+from sklearn.linear_model import Ridge
+from sklearn.preprocessing import StandardScaler
 ```
 
 I constructed a pipeline with feature scaling and Random Forest Regressor as follows: 
 
+```python
+# Split the data into train and test sets for SIT:
+train_features, test_features, train_labels, test_labels = train_test_split(features, labels, 
+                                                                                test_size = 0.25, 
+                                                                                random_state = 42)
+# Create a pipeline with StandardScaler and RandomForestRegressor
+rf_pipeline = Pipeline([('scaler', StandardScaler()),
+        ('rf', RandomForestRegressor(n_estimators=1000, random_state=42))]) 
 
+# Train the model on training data
+rf_pipeline.fit(train_features, train_labels)
+    
+# Use the forest's predict method on the test data
+predictions = rf_pipeline.predict(test_features)
+```
 
 Thereafter, I calculated feature importance which gave an estimate of how important a particular feature is in determining the target variable i.e. SIT. These feature importance values are then plotted as bar plots for every region and two distinct seasons:
 
+```python
+
+```
+
 This study also employs the use of SHAP (SHapley Additive exPlanations) plots. SHAP values are a way to explain the output of any machine learning model. It uses a game theoretic approach that measures each feature’s contribution to the final outcome. In machine learning, each feature is assigned an importance value representing its contribution to the model’s output (as seen above). SHAP values show how each feature affects each final prediction, the significance of each feature compared to others, and the model’s reliance on the interaction between features. Similarly, SHAP plots were also produced for every region and the seasons:
 
+```python
+
+```
+
 In the end, I have compared the regional Random Forest Regression Models for every season by using the Regression Error Characteristics (REC) Curves to assess how the models have performed in every region:
+
+```python
+
+```
 
 
 ## Results
