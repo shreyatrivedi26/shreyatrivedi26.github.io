@@ -40,7 +40,7 @@ My project will utilize gridded NetCDF datasets which are 3-D datasets (longitud
 
 All variables underwent pre-processing in Python using the “xarray” library. Original datasets, in NetCDF 3-D format, were transformed into time series (Fig. 1a) following methodologies detailed in studies outlined in Table 1. The SIT dataset utilized here represents a time series derived from area-averaging calculations of the spatial dataset. For regional analysis, the circum-Antarctic (Southern Ocean) region was partitioned into five major zones: Amundsen-Bellingshausen Seas (ABS), Ross-Amundsen Seas (RAM), East Antarctic, King Hakon VII, and Weddell Sea (Fig. 1b). Additionally, the time series was segregated into two primary sea-ice seasons: Advance (April-August) and Retreat (October-February). This segmentation aligns with the approach outlined in the study by Raphael & Hobbs, 2014.  
 
-![](assets/IMG/Figure1.png){: width="500" }
+![](assets/IMG/Figure1.png)
 Figure 1: a) Time series for the five selected atmospheric circulation indices in the Southern Hemisphere; b) Selected Antarctic regions based on Raphael and Hobbs, 2014.
 
 ## Supervised Machine Learning Approach:
@@ -48,7 +48,7 @@ Figure 1: a) Time series for the five selected atmospheric circulation indices i
 This project employs a supervised Machine Learning Algorithm, specifically the Random Forest Regression Algorithm. Previous studies have established that the trend in daily total Antarctic sea-ice over time is strongly nonlinear and that the linear estimates are weak and dependent on a positive trend that began in 2011 and ended in 2016 (Handcock & Raphael, 2020). This suggests that the relationship between sea ice extent and other climatic variables could also be nonlinear. In a nonlinear relationship, the changes in one variable are not proportional to changes in the other, and the relationship may exhibit complex patterns or behaviors. If linear estimates are weak and dependent on specific trends within a certain timeframe, it implies that a simple linear model may not capture the true nature of the relationship. Nonlinear relationships could involve threshold effects, interactions, or other complexities that linear models might not adequately represent. Therefore, in this study I have employed the use of sophisticated nonlinear models (i.e. a supervised regression technique of Random Forest Regression Algorithm) to better understand the dynamics between Antarctic sea-ice and other climatic variables. The analysis involves identifying various atmospheric indices as “predictors” (features), with the Antarctic SIT as the predicted (target) variable. This process is executed for each region and across two distinct sea-ice seasons.
 Prior studies established these selected indices as significant drivers of Antarctic sea-ice changes. To statistically validate their significance, covariance (Fig.2) among the indices was calculated. This analysis justifies their selection based on correlations, where higher correlations imply similar impact and covariability, thereby reducing the distinct impact of individual predictors.
 
-![](assets/IMG/CorrMap){: width="500" }
+![](assets/IMG/CorrMap.png)
 Figure 2: Covariance matrix showing correlations between different atmospheric circulation-based indices. 
 
 The preference is for features that are as “mutually exclusive” as possible. Fig.2 illustrates that most of the chosen predictors exhibit minimal correlations among themselves. An exception is observed for the SAM and ASL, with the highest correlation value recorded at -0.56. However, this correlation, although notable, is not significantly high to compromise its relevance as the crucial predictors.
@@ -151,14 +151,17 @@ def rec(m, n, tol):
 
 ## Results
 
-![](assets/IMG/Figure1.png){: width="500" }
-*Figure 1: Here is a caption for my diagram. This one shows a pengiun [1].*
-*Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.*
+![](assets/IMG/Feature_importances.png){: width="500" }
 
+*Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons. [1]*
+
+![](assets/IMG/Figure4.png){: width="500" }
 Figure 4:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Advance Season.
 
+![](assets/IMG/Figure5.png){: width="500" }
 Figure 5:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Retreat Season.
 
+![](assets/IMG/REC_Curves_BothSeasons.png){: width="500" }
 Figure 6:  REC Curves for the regional Random Forest Regression Models for two distinct sea-ice seasons.
 
 
