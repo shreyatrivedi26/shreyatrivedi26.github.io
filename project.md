@@ -18,16 +18,16 @@ This study focuses on Southern Hemisphere atmospheric circulation patterns and t
 
 **I.	Understanding the Significance of Climatic Modes:**
 
-  a.	Identifying the primary dictating factor for sea-ice distribution in each region.
+    a.	Identifying the primary dictating factor for sea-ice distribution in each region.
   
-  b.	Assessing the magnitude and direction of the impact.
+    b.	Assessing the magnitude and direction of the impact.
 
 
   **II.	Assessing effectiveness of selected Machine Learning Algorithm:** 
 
-  a.	Evaluating the efficacy of supervised machine learning algorithm, specifically Random Forest Regression, in capturing spatio-temporal relationships.
+    a.	Evaluating the efficacy of supervised machine learning algorithm, specifically Random Forest Regression, in capturing spatio-temporal relationships.
   
-  b.	Investigating the seasonal variations in the performance of regional specific-trained Random Forest Regression models.
+    b.	Investigating the seasonal variations in the performance of regional specific-trained Random Forest Regression models.
 
 
 ## Data
