@@ -36,7 +36,9 @@ b.	Investigating the seasonal variations in the performance of regional specific
 
 My project will utilize gridded NetCDF datasets which are 3-D datasets (longitude, latitude, time) for various sea-ice and atmospheric variables. These will be derived from the historical experiment of the CMIP6’s coupled climate model (i.e. CESM2) for the time-period of 1979-2014. The dataset can be accessed and downloaded from the ESGF website via following: https://esgf-node.llnl.gov/search/cmip6/. Various climatic indices have been calculated using different atmospheric variables obtained from the historical experiment of CESM2 couple climate model. The details can be found in Table 1. 
 
-![](assets/IMG/Table1.png)
+<p align="center">
+  <img src="assets/IMG/Table1.png" alt="Table 1">
+</p>
 
 ## Methodlogy
 
