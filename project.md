@@ -49,6 +49,7 @@ This project employs a supervised Machine Learning Algorithm, specifically the R
 Prior studies established these selected indices as significant drivers of Antarctic sea-ice changes. To statistically validate their significance, covariance (Fig.2) among the indices was calculated. This analysis justifies their selection based on correlations, where higher correlations imply similar impact and covariability, thereby reducing the distinct impact of individual predictors.
 
 ![](assets/IMG/CorrMap.png)
+
 *Figure 2: Covariance matrix showing correlations between different atmospheric circulation-based indices.*
 
 The preference is for features that are as “mutually exclusive” as possible. Fig.2 illustrates that most of the chosen predictors exhibit minimal correlations among themselves. An exception is observed for the SAM and ASL, with the highest correlation value recorded at -0.56. However, this correlation, although notable, is not significantly high to compromise its relevance as the crucial predictors.
@@ -151,17 +152,20 @@ def rec(m, n, tol):
 
 ## Results
 
-![](assets/IMG/Feature_importances.png){: width="500" }
+![](assets/IMG/Feature_importances.png)
 
 *Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.*
 
 ![](assets/IMG/Figure4.png){: width="500" }
+
 *Figure 4:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Advance Season.*
 
 ![](assets/IMG/Figure5.png){: width="500" }
+
 *Figure 5:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Retreat Season.*
 
 ![](assets/IMG/REC_Curves_BothSeasons.png){: width="500" }
+
 *Figure 6:  REC Curves for the regional Random Forest Regression Models for two distinct sea-ice seasons.*
 
 
