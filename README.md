@@ -8,9 +8,14 @@ Below is my report:
 
 ***
 
-## Title
+<p align="center">
+  <strong>Title</strong>
+</p>
 
-Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
+<p align="center">
+  Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
+</p>
+
 
 
 ## Introduction 
