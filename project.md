@@ -18,16 +18,12 @@ Sea-ice distribution in Antarctica is subject to diverse atmospheric and oceanic
 
 This study focuses on Southern Hemisphere atmospheric circulation patterns and their role in explaining interannual variability in Southern Ocean sea-ice trends, with a specific emphasis on Sea-Ice Thickness (SIT). The project aims to elucidate the relationships between Antarctic SIT and five primary large-scale atmospheric circulation indices in the Southern Hemisphere: Southern Annular Mode (SAM), Amundsen Sea Low (ASL), El-Nino Southern Oscillation (ENSO), Meridional Wind Index (MWI), and Zonal Wave-3 Index (ZW3). While these indices are recognized as primary drivers of Antarctic sea-ice changes, their influence varies regionally, and no singular mode has been identified as the predominant factor governing total sea-ice changes in Antarctica. In addition to regional heterogeneity, seasonal variabilities in sea-ice are influenced by atmospheric models. Given the non-linear relationships between sea-ice and atmospheric variables, this study employs supervised Random Forest Regression, a machine learning algorithm, to comprehend and predict these intricate relationships. The objectives of this study include:
 
-**1.	Understanding the Significance of Climatic Modes:**
-
-  -Identifying the primary dictating factor for sea-ice distribution in each region.
-  -Assessing the magnitude and direction of the impact.
-
-
-**2.	Assessing effectiveness of selected Machine Learning Algorithm:** 
-
-  -Evaluating the efficacy of supervised machine learning algorithm, specifically Random Forest Regression, in capturing spatio-temporal relationships.
-  -Investigating the seasonal variations in the performance of regional specific-trained Random Forest Regression models.
+1. **Understanding the Significance of Climatic Modes:**
+  Identifying the primary dictating factor for sea-ice distribution in each region.
+  Assessing the magnitude and direction of the impact.
+3. **Assessing effectiveness of selected Machine Learning Algorithm:** 
+  Evaluating the efficacy of supervised machine learning algorithm, specifically Random Forest Regression, in capturing spatio-temporal relationships.
+  Investigating the seasonal variations in the performance of regional specific-trained Random Forest Regression models.
 
 
 ## Data
