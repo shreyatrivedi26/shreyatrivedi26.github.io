@@ -8,9 +8,9 @@ I applied a supervised machine learning algorithm to investigate relationships b
 
 <h2 align="center">Title</h2>
 
-<h5 align="center">
+<h3 align="center">
   Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
-</h5>
+</h3>
 
 
 ***
