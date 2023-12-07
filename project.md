@@ -41,6 +41,7 @@ My project will utilize gridded NetCDF datasets which are 3-D datasets (longitud
 All variables underwent pre-processing in Python using the “xarray” library. Original datasets, in NetCDF 3-D format, were transformed into time series (Fig. 1a) following methodologies detailed in studies outlined in Table 1. The SIT dataset utilized here represents a time series derived from area-averaging calculations of the spatial dataset. For regional analysis, the circum-Antarctic (Southern Ocean) region was partitioned into five major zones: Amundsen-Bellingshausen Seas (ABS), Ross-Amundsen Seas (RAM), East Antarctic, King Hakon VII, and Weddell Sea (Fig. 1b). Additionally, the time series was segregated into two primary sea-ice seasons: Advance (April-August) and Retreat (October-February). This segmentation aligns with the approach outlined in the study by Raphael & Hobbs, 2014.  
 
 ![](assets/IMG/Figure1.png)
+
 *Figure 1: a) Time series for the five selected atmospheric circulation indices in the Southern Hemisphere; b) Selected Antarctic regions based on Raphael and Hobbs, 2014.*
 
 ## Supervised Machine Learning Approach:
@@ -156,15 +157,15 @@ def rec(m, n, tol):
 
 *Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.*
 
-![](assets/IMG/Figure4.png){: width="500" }
+![](assets/IMG/Figure4.png)
 
 *Figure 4:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Advance Season.*
 
-![](assets/IMG/Figure5.png){: width="500" }
+![](assets/IMG/Figure5.png)
 
 *Figure 5:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Retreat Season.*
 
-![](assets/IMG/REC_Curves_BothSeasons.png){: width="500" }
+![](assets/IMG/REC_Curves_BothSeasons.png)
 
 *Figure 6:  REC Curves for the regional Random Forest Regression Models for two distinct sea-ice seasons.*
 
