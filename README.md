@@ -46,7 +46,10 @@ My project will utilize gridded NetCDF datasets which are 3-D datasets (longitud
 
 All variables underwent pre-processing in Python using the “xarray” library. Original datasets, in NetCDF 3-D format, were transformed into time series (Fig. 1a) following methodologies detailed in studies outlined in Table 1. The SIT dataset utilized here represents a time series derived from area-averaging calculations of the spatial dataset. For regional analysis, the circum-Antarctic (Southern Ocean) region was partitioned into five major zones: Amundsen-Bellingshausen Seas (ABS), Ross-Amundsen Seas (RAM), East Antarctic, King Hakon VII, and Weddell Sea (Fig. 1b). Additionally, the time series was segregated into two primary sea-ice seasons: Advance (April-August) and Retreat (October-February). This segmentation aligns with the approach outlined in the study by Raphael & Hobbs, 2014.  
 
-![](assets/IMG/Figure1.png)
+<p align="center">
+  <img src="assets/IMG/Figure1.png" alt="Figure 1">
+</p>
+
 
 *Figure 1: a) Time series for the five selected atmospheric circulation indices in the Southern Hemisphere; b) Selected Antarctic regions based on Raphael and Hobbs, 2014.*
 
@@ -56,7 +59,9 @@ This project employs a supervised Machine Learning Algorithm, specifically the R
 
 
 Prior studies established these selected indices as significant drivers of Antarctic sea-ice changes. To statistically validate their significance, covariance (Fig.2) among the indices was calculated. This analysis justifies their selection based on correlations, where higher correlations imply similar impact and covariability, thereby reducing the distinct impact of individual predictors.
-![](assets/IMG/CorrMap.png)
+<p align="center">
+  <img src="assets/IMG/CorrMap.png" alt="CorrMap 1">
+</p>
 
 *Figure 2: Covariance matrix showing correlations between different atmospheric circulation-based indices.*
 
@@ -162,19 +167,27 @@ def rec(m, n, tol):
 
 ## Results
 
-![](assets/IMG/Feature_importances.png)
+<p align="center">
+  <img src="assets/IMG/Feature_importances.png" alt="Feature_importances">
+</p>
 
 *Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.*
 
-![](assets/IMG/Figure4.png)
+<p align="center">
+  <img src="assets/IMG/Figure4.png" alt="Figure 4">
+</p>
 
 *Figure 4:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Advance Season.*
 
-![](assets/IMG/Figure5.png)
+<p align="center">
+  <img src="assets/IMG/Figure5.png" alt="Figure 5">
+</p>
 
 *Figure 5:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Retreat Season.*
 
-![](assets/IMG/REC_Curves_BothSeasons.png)
+<p align="center">
+  <img src="assets/IMG/REC_Curves_BothSeasons.png" alt="REC_Curves_BothSeasons">
+</p>
 
 *Figure 6:  REC Curves for the regional Random Forest Regression Models for two distinct sea-ice seasons.*
 
