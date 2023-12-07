@@ -1,5 +1,5 @@
 # AOS C204: Introduction to Machine Learning for Physical Sciences 
-# Final Project
+# ## <p style="text-align:center;">Final Project</p>
 
 I applied machine learning techniques to investigate relationships between Antarctic Sea-ice Thickness and various Southern Hemispheric Atmospheric Indices. 
 
@@ -7,9 +7,9 @@ Below is my report:
 
 ***
 
-## Title 
+## <p style="text-align:center;">Title</p>
 
-<p align="center"><strong>Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations</strong></p>
+Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
 
 
 ## Introduction 
