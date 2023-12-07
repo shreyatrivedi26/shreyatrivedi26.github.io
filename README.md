@@ -8,13 +8,12 @@ Below is my report:
 
 ***
 
-<p align="center">
-  <strong># Title</strong>
-</p>
+<h2 align="center">Title</h2>
 
 <p align="center">
   Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
 </p>
+
 
 
 
