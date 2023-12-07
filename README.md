@@ -10,7 +10,7 @@ Below is my report:
 
 <h2 align="center">Title</h2>
 
-<p align="center" style="font-size:18px;">
+<p align="center" style="font-size:20px;">
   Understanding relationships between Antarctic sea-ice thickness and the southern hemispheric atmospheric circulations
 </p>
 
