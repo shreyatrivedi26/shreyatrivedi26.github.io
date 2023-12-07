@@ -1,4 +1,4 @@
-# AOS 204: Introduction to Machine Learning for Physical Sciences
+<h1 align="center">AOS 204: Introduction to Machine Learning for Physical Sciences</h1>
 
 <h1 align="center">Final Project</h1>
 
