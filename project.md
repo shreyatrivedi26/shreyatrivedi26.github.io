@@ -18,16 +18,16 @@ Sea-ice distribution in Antarctica is subject to diverse atmospheric and oceanic
 
 This study focuses on Southern Hemisphere atmospheric circulation patterns and their role in explaining interannual variability in Southern Ocean sea-ice trends, with a specific emphasis on Sea-Ice Thickness (SIT). The project aims to elucidate the relationships between Antarctic SIT and five primary large-scale atmospheric circulation indices in the Southern Hemisphere: Southern Annular Mode (SAM), Amundsen Sea Low (ASL), El-Nino Southern Oscillation (ENSO), Meridional Wind Index (MWI), and Zonal Wave-3 Index (ZW3). While these indices are recognized as primary drivers of Antarctic sea-ice changes, their influence varies regionally, and no singular mode has been identified as the predominant factor governing total sea-ice changes in Antarctica. In addition to regional heterogeneity, seasonal variabilities in sea-ice are influenced by atmospheric models. Given the non-linear relationships between sea-ice and atmospheric variables, this study employs supervised Random Forest Regression, a machine learning algorithm, to comprehend and predict these intricate relationships. The objectives of this study include:
 
--**I.	Understanding the Significance of Climatic Modes:**
+**1.	Understanding the Significance of Climatic Modes:**
 
-  -1.	Identifying the primary dictating factor for sea-ice distribution in each region.
-  -2.	Assessing the magnitude and direction of the impact.
+  -Identifying the primary dictating factor for sea-ice distribution in each region.
+  -Assessing the magnitude and direction of the impact.
 
 
--**II.	Assessing effectiveness of selected Machine Learning Algorithm:** 
+**2.	Assessing effectiveness of selected Machine Learning Algorithm:** 
 
-  -1.	Evaluating the efficacy of supervised machine learning algorithm, specifically Random Forest Regression, in capturing spatio-temporal relationships.
-  -2.	Investigating the seasonal variations in the performance of regional specific-trained Random Forest Regression models.
+  -Evaluating the efficacy of supervised machine learning algorithm, specifically Random Forest Regression, in capturing spatio-temporal relationships.
+  -Investigating the seasonal variations in the performance of regional specific-trained Random Forest Regression models.
 
 
 ## Data
@@ -187,9 +187,9 @@ SHAP Plots (Fig.4 and 5) build upon the results from the Fig.3 by assessing the 
 My findings demonstrate the effectiveness of the Random Forest Regression Model in establishing relationships between diverse features (in my case, Climate Indices in Southern Hemisphere), whether inclusive or exclusive, and the target variable (i.e. SIT). The model proves to be a valuable tool for identifying key drivers of sea ice changes through its feature importance function and facilitates the assessment of the nature of relationships using SHAP Plots. However, it is noteworthy that the model’s performance exhibits significant variations depending on the season and geographical regions. 
 
 Several factors contribute to these results:
--1.	As highlighted in the text and illustrated in figures 3-5, climate indices exhibit heterogeneity in their influence on sea ice thickness, varying with season and region. This diversity in the physical reasons leads to different model performances.
--2.	The complex and non-linear relationships that these indices share with sea ice thickness might pose challenges for a straightforward Random Forest Regression model to comprehend and establish.
--3.	Additionally, the covariability of different features can appear distinct across regions and vary seasonally, causing models to perform well in some instances and poorly in others.
+1.	As highlighted in the text and illustrated in figures 3-5, climate indices exhibit heterogeneity in their influence on sea ice thickness, varying with season and region. This diversity in the physical reasons leads to different model performances.
+2.	The complex and non-linear relationships that these indices share with sea ice thickness might pose challenges for a straightforward Random Forest Regression model to comprehend and establish.
+3.	Additionally, the covariability of different features can appear distinct across regions and vary seasonally, causing models to perform well in some instances and poorly in others.
 
 In conclusion, the Random Forest Regression Model indicates that certain regions and seasons present more challenges for modeling than others.
 
