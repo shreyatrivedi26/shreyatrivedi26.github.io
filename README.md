@@ -60,7 +60,7 @@ This project employs a supervised Machine Learning Algorithm, specifically the R
 
 Prior studies established these selected indices as significant drivers of Antarctic sea-ice changes. To statistically validate their significance, covariance (Fig.2) among the indices was calculated. This analysis justifies their selection based on correlations, where higher correlations imply similar impact and covariability, thereby reducing the distinct impact of individual predictors.
 <p align="center">
-  <img src="assets/IMG/CorrMap.png" alt="CorrMap 1">
+  <img src="assets/IMG/CorrMap.png" alt="Figure 2">
 </p>
 
 *Figure 2: Covariance matrix showing correlations between different atmospheric circulation-based indices.*
@@ -168,7 +168,7 @@ def rec(m, n, tol):
 ## Results
 
 <p align="center">
-  <img src="assets/IMG/Feature_importances.png" alt="Feature_importances">
+  <img src="assets/IMG/Feature_importances.png" alt="Figure 3">
 </p>
 
 *Figure 3:  Plot showing the feature importance for all the 5 regions (x-axis) and their corresponding importance in the two seasons.*
@@ -186,7 +186,7 @@ def rec(m, n, tol):
 *Figure 5:  SHAP Plots showing the magnitude and the intensity of the impact of the features on the predicted target value i.e. SIT for the 5 regions for Retreat Season.*
 
 <p align="center">
-  <img src="assets/IMG/REC_Curves_BothSeasons.png" alt="REC_Curves_BothSeasons">
+  <img src="assets/IMG/REC_Curves_BothSeasons.png" alt="Figure 6">
 </p>
 
 *Figure 6:  REC Curves for the regional Random Forest Regression Models for two distinct sea-ice seasons.*
@@ -204,9 +204,13 @@ SHAP Plots (Fig.4 and 5) build upon the results from the Fig.3 by assessing the 
 My findings demonstrate the effectiveness of the Random Forest Regression Model in establishing relationships between diverse features (in my case, Climate Indices in Southern Hemisphere), whether inclusive or exclusive, and the target variable (i.e. SIT). The model proves to be a valuable tool for identifying key drivers of sea ice changes through its feature importance function and facilitates the assessment of the nature of relationships using SHAP Plots. However, it is noteworthy that the model’s performance exhibits significant variations depending on the season and geographical regions. 
 
 Several factors contribute to these results:
-1.	As highlighted in the text and illustrated in figures 3-5, climate indices exhibit heterogeneity in their influence on sea ice thickness, varying with season and region. This diversity in the physical reasons leads to different model performances.
-2.	The complex and non-linear relationships that these indices share with sea ice thickness might pose challenges for a straightforward Random Forest Regression model to comprehend and establish.
-3.	Additionally, the covariability of different features can appear distinct across regions and vary seasonally, causing models to perform well in some instances and poorly in others.
+
+1. As highlighted in the text and illustrated in figures 3-5, climate indices exhibit heterogeneity in their influence on sea ice thickness, varying with season and region. This diversity in the physical reasons leads to different model performances.
+
+2. The complex and non-linear relationships that these indices share with sea ice thickness might pose challenges for a straightforward Random Forest Regression model to comprehend and establish.
+
+3. Additionally, the covariability of different features can appear distinct across regions and vary seasonally, causing models to perform well in some instances and poorly in others.
+
 
 In conclusion, the Random Forest Regression Model indicates that certain regions and seasons present more challenges for modeling than others.
 
